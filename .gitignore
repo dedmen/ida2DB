@@ -77,3 +77,17 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
+idb2sig/Release/idb2sig.tlog/CL.command.1.tlog
+idb2sig/Release/idb2sig.tlog/CL.read.1.tlog
+/idb2sig/Release
+/idb2sig/ipch/IDB2SIG-d091b97/*.ipch
+/idb2sig/idb2sig.iobj
+/idb2sig/idb2sig.ipdb
+/idb2sig/idb2sig.plw
+/idb2sig/idb2sig.sdf
+/idb2sig/idb2sig.vcxproj.filters
+/idb2sig/idb2sig.vcxproj.user
+/idb2sig/.vs/idb2sig/v14/*.suo
+/LoadMap/LoadMap.plw
+/LoadMap/LoadMap.vcxproj.filters
+/LoadMap/LoadMap.vcxproj.user
