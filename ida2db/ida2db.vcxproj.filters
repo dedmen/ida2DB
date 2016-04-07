@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files\IDA">
+      <UniqueIdentifier>{e836e8c1-7a9d-4747-ba00-d7f3e4250e79}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ida2db.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="database.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ida2db.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="mainwidget.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_database.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_database.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwidget.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClInclude Include="ui_mainwidget.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwidget.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\graph.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\help.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ida.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\idd.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\idp.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ieee.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\intel.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ints.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\kernwin.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lex.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\lines.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\llong.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\loader.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\md5.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\moves.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\nalt.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\name.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\netnode.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\offset.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pro.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\prodir.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\pronet.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\queue.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\regex.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\search.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\segment.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\sistack.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\srarea.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\strlist.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\struct.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\typeinf.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\ua.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\workarounds.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\xref.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\allins.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\allow_deprecated.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\area.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\auto.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\bitrange.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\bytes.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\compress.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\dbg.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\demangle.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\diskio.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\entry.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\enum.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\err.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\exehdr.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\expr.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\fixup.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\fpro.h">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\frame.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\funcs.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\gdl.hpp">
+      <Filter>Header Files\IDA</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

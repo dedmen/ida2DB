@@ -561,7 +561,7 @@ static size_t make_func_sig(ea_t start_ea, ulong len, char *pSigBuf)
 
     // alen is length of the crc data
     alen = pos - 32;
-    crc = crc16(crc_data, (uint16) alen);
+    crc = crc16(crc_data, (uint16) alen); //#TODO maybe want crc32
 
     // Format alen, crc and len to " %02X %04X %04X" format
     *pc++ = SPACE;
@@ -904,6 +904,14 @@ static int idaapi init(void)
 
     InitCRCTable();
 
+
+	//#TODO create Thread and pre crc all named functions with sigs to cmp with DB
+	//make list of functions that match
+	//list of functions that mismatch(function name)
+	//list of functions that are new (sig not in DB)
+	//table with key,ptrToVersion,ptrToFunc	so i only have to fetch functions with this executables version
+	//#TODO function to get executable version
+	//http://dev.mysql.com/doc/refman/5.7/en/storage-requirements.html
     /* Get the full path of plugin */
     _VERIFY(GetModuleFileName(g_hinstPlugin, g_szIniPath, countof(g_szIniPath)));
     g_szIniPath[countof(g_szIniPath) - 1] = '\0';
@@ -1149,6 +1157,7 @@ char wanted_hotkey[] = "Ctrl-F7";
 extern "C" {
     plugin_t PLUGIN = {
     IDP_INTERFACE_VERSION,
+	//#TODO set flags PLUGIN_MOD PLUGIN_FIX
     0,                      // plugin flags
     init,                   // initialize
     term,                   // terminate. this pointer may be NULL.

@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6D794CC6-CB09-344F-A9A3-253F6041AB53}</ProjectGuid>
+    <RootNamespace>ida2db</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</IgnoreImportLibrary>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\</IntDir>
+    <IgnoreImportLibrary Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtCore";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtNetwork";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtGui";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtSql";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include";"..\..\..\include";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\ActiveQt";"debug";".";j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -FS /FS -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;QT_NAMESPACE=QT;__IDP__;NO_OBSOLETE_FUNCS;__NT__;_CRT_SECURE_NO_WARNINGS;__VC__;_DEBUG;QT_DLL;QT_SQL_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../../../lib/x86_win_vc_32/\ida.lib;j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib\QtSqld.lib;j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib\QtGuid.lib;j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib\QtNetworkd.lib;j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib\QtCored.lib;J:\Installs\development\mariaDB\build\libmariadb\Release\mariadbclient.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;winspool.lib;msimg32.lib;ssleay32MTd.lib;libeay32MTd.lib;User32.lib;Advapi32.lib;Gdi32.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib;../../../lib/x86_win_vc_32/;J:\Installs\development\mariaDB\build\libmariadb\Release;J:\Installs\development\c++\openssl-1.0.2e-vs2015\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <OutputFile>$(OutDir)\ida2db.plw</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;QT_NAMESPACE=QT;__IDP__;NO_OBSOLETE_FUNCS;__NT__;_CRT_SECURE_NO_WARNINGS;__VC__;_DEBUG;QT_DLL;QT_SQL_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtCore";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtNetwork";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtGui";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtSql";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include";"..\..\..\include";"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\ActiveQt";"release";".";j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\mkspecs\win32-msvc2015;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zm200 -FS /FS -w34100 -w34189 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;QT_NAMESPACE=QT;__IDP__;NO_OBSOLETE_FUNCS;__NT__;_CRT_SECURE_NO_WARNINGS;__VC__;QT_DLL;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName>.\</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>false</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>../../../lib/x86_win_vc_32/\ida.lib;j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib\QtSql.lib;j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib\QtGui.lib;j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib\QtNetwork.lib;j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib\QtCore.lib;J:\Installs\development\mariaDB\build\libmariadb\Release\mariadbclient.lib;kernel32.lib;user32.lib;shell32.lib;uuid.lib;ole32.lib;advapi32.lib;ws2_32.lib;gdi32.lib;comdlg32.lib;oleaut32.lib;imm32.lib;winmm.lib;winspool.lib;msimg32.lib;ssleay32MT.lib;libeay32MT.lib;User32.lib;Advapi32.lib;Gdi32.lib;Crypt32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\lib;../../../lib/x86_win_vc_32/;J:\Installs\development\mariaDB\build\libmariadb\Release;J:\Installs\development\c++\openssl-1.0.2e-vs2015\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkDLL>true</LinkDLL>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\ida2db.plw</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;WIN32;_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS;QT_NAMESPACE=QT;__IDP__;NO_OBSOLETE_FUNCS;__NT__;_CRT_SECURE_NO_WARNINGS;__VC__;QT_DLL;QT_NO_DEBUG;QT_SQL_LIB;QT_GUI_LIB;QT_NETWORK_LIB;QT_CORE_LIB;QT_HAVE_MMX;QT_HAVE_3DNOW;QT_HAVE_SSE;QT_HAVE_MMXEXT;QT_HAVE_SSE2;QT_THREAD_SUPPORT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="global.cpp" />
+    <ClCompile Include="ida2db.cpp" />
+    <ClCompile Include="mainwidget.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="database.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\moc.exe;database.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\moc.exe  -DUNICODE -DWIN32 -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS -DQT_NAMESPACE=QT -D__IDP__ -DNO_OBSOLETE_FUNCS -D__NT__ -D_CRT_SECURE_NO_WARNINGS -D__VC__ -D_DEBUG -DQT_DLL -DQT_SQL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtCore" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtNetwork" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtGui" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtSql" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include" -I"..\..\..\include" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\ActiveQt" -I"debug" -I"." -Ij:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\mkspecs\win32-msvc2015 -D_MSC_VER=1900 -DWIN32 database.h -o debug\moc_database.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC database.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_database.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\moc.exe;database.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\moc.exe  -DUNICODE -DWIN32 -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS -DQT_NAMESPACE=QT -D__IDP__ -DNO_OBSOLETE_FUNCS -D__NT__ -D_CRT_SECURE_NO_WARNINGS -D__VC__ -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtCore" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtNetwork" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtGui" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtSql" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include" -I"..\..\..\include" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\ActiveQt" -I"release" -I"." -Ij:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\mkspecs\win32-msvc2015 -D_MSC_VER=1900 -DWIN32 database.h -o release\moc_database.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC database.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_database.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="..\..\..\include\allins.hpp" />
+    <ClInclude Include="..\..\..\include\allow_deprecated.hpp" />
+    <ClInclude Include="..\..\..\include\area.hpp" />
+    <ClInclude Include="..\..\..\include\auto.hpp" />
+    <ClInclude Include="..\..\..\include\bitrange.hpp" />
+    <ClInclude Include="..\..\..\include\bytes.hpp" />
+    <ClInclude Include="..\..\..\include\compress.hpp" />
+    <ClInclude Include="..\..\..\include\dbg.hpp" />
+    <ClInclude Include="..\..\..\include\demangle.hpp" />
+    <ClInclude Include="..\..\..\include\diskio.hpp" />
+    <ClInclude Include="..\..\..\include\entry.hpp" />
+    <ClInclude Include="..\..\..\include\enum.hpp" />
+    <ClInclude Include="..\..\..\include\err.h" />
+    <ClInclude Include="..\..\..\include\exehdr.h" />
+    <ClInclude Include="..\..\..\include\expr.hpp" />
+    <ClInclude Include="..\..\..\include\fixup.hpp" />
+    <ClInclude Include="..\..\..\include\fpro.h" />
+    <ClInclude Include="..\..\..\include\frame.hpp" />
+    <ClInclude Include="..\..\..\include\funcs.hpp" />
+    <ClInclude Include="..\..\..\include\gdl.hpp" />
+    <ClInclude Include="..\..\..\include\graph.hpp" />
+    <ClInclude Include="..\..\..\include\help.h" />
+    <ClInclude Include="..\..\..\include\ida.hpp" />
+    <ClInclude Include="..\..\..\include\idd.hpp" />
+    <ClInclude Include="..\..\..\include\idp.hpp" />
+    <ClInclude Include="..\..\..\include\ieee.h" />
+    <ClInclude Include="..\..\..\include\intel.hpp" />
+    <ClInclude Include="..\..\..\include\ints.hpp" />
+    <ClInclude Include="..\..\..\include\kernwin.hpp" />
+    <ClInclude Include="..\..\..\include\lex.hpp" />
+    <ClInclude Include="..\..\..\include\lines.hpp" />
+    <ClInclude Include="..\..\..\include\llong.hpp" />
+    <ClInclude Include="..\..\..\include\loader.hpp" />
+    <ClInclude Include="..\..\..\include\md5.h" />
+    <ClInclude Include="..\..\..\include\moves.hpp" />
+    <ClInclude Include="..\..\..\include\nalt.hpp" />
+    <ClInclude Include="..\..\..\include\name.hpp" />
+    <ClInclude Include="..\..\..\include\netnode.hpp" />
+    <ClInclude Include="..\..\..\include\offset.hpp" />
+    <ClInclude Include="..\..\..\include\pro.h" />
+    <ClInclude Include="..\..\..\include\prodir.h" />
+    <ClInclude Include="..\..\..\include\pronet.h" />
+    <ClInclude Include="..\..\..\include\queue.hpp" />
+    <ClInclude Include="..\..\..\include\regex.h" />
+    <ClInclude Include="..\..\..\include\search.hpp" />
+    <ClInclude Include="..\..\..\include\segment.hpp" />
+    <ClInclude Include="..\..\..\include\sistack.hpp" />
+    <ClInclude Include="..\..\..\include\srarea.hpp" />
+    <ClInclude Include="..\..\..\include\strlist.hpp" />
+    <ClInclude Include="..\..\..\include\struct.hpp" />
+    <ClInclude Include="..\..\..\include\typeinf.hpp" />
+    <ClInclude Include="..\..\..\include\ua.hpp" />
+    <ClInclude Include="..\..\..\include\workarounds.hpp" />
+    <ClInclude Include="..\..\..\include\xref.hpp" />
+    <ClInclude Include="global.h" />
+    <ClInclude Include="ida2db.h" />
+    <CustomBuild Include="mainwidget.h">
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\moc.exe;mainwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\moc.exe  -DUNICODE -DWIN32 -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS -DQT_NAMESPACE=QT -D__IDP__ -DNO_OBSOLETE_FUNCS -D__NT__ -D_CRT_SECURE_NO_WARNINGS -D__VC__ -D_DEBUG -DQT_DLL -DQT_SQL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtCore" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtNetwork" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtGui" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtSql" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include" -I"..\..\..\include" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\ActiveQt" -I"debug" -I"." -Ij:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\mkspecs\win32-msvc2015 -D_MSC_VER=1900 -DWIN32 mainwidget.h -o debug\moc_mainwidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">MOC mainwidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">debug\moc_mainwidget.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\moc.exe;mainwidget.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\moc.exe  -DUNICODE -DWIN32 -D_SILENCE_STDEXT_HASH_DEPRECATION_WARNINGS -DQT_NAMESPACE=QT -D__IDP__ -DNO_OBSOLETE_FUNCS -D__NT__ -D_CRT_SECURE_NO_WARNINGS -D__VC__ -DQT_DLL -DQT_NO_DEBUG -DQT_SQL_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_HAVE_MMX -DQT_HAVE_3DNOW -DQT_HAVE_SSE -DQT_HAVE_MMXEXT -DQT_HAVE_SSE2 -DQT_THREAD_SUPPORT -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtCore" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtNetwork" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtGui" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\QtSql" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include" -I"..\..\..\include" -I"j:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\include\ActiveQt" -I"release" -I"." -Ij:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\mkspecs\win32-msvc2015 -D_MSC_VER=1900 -DWIN32 mainwidget.h -o release\moc_mainwidget.cpp</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">MOC mainwidget.h</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">release\moc_mainwidget.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_database.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_database.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwidget.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_mainwidget.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="mainwidget.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\uic.exe;mainwidget.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\uic.exe mainwidget.ui -o ui_mainwidget.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">UIC mainwidget.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">ui_mainwidget.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\uic.exe;mainwidget.ui;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">J:\Installs\development\c++\QT4.8.4_static_mysql_ssl_forIDA\bin\uic.exe mainwidget.ui -o ui_mainwidget.h</Command>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">UIC mainwidget.ui</Message>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">ui_mainwidget.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
